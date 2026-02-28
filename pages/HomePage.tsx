@@ -158,7 +158,7 @@ const HomePage: React.FC = () => {
 
     const [heroImageLoaded, setHeroImageLoaded] = useState(false);
     const [heroContent, setHeroContent] = useState({
-        //imageUrl: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2071&auto=format&fit=crop',
+        imageUrl: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2071&auto=format&fit=crop',
         title: 'Innovate. Create. Lead.',
         subtitle: 'The Future of Technology Starts Here. Join us to shape the world of tomorrow.',
     });
