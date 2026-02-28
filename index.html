@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <title>Dinajpur Polytechnic Institute - Computer Department</title>
+    
+    <!-- Preconnect to image and data sources -->
+    <link rel="preconnect" href="https://images.unsplash.com">
+    <link rel="preconnect" href="https://aistudiocdn.com">
+    
+    <!-- Preload critical hero image -->
+    <link rel="preload" as="image" href="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2071&auto=format&fit=crop" fetchpriority="high">
+    
+    <!-- Google Fonts for Material Symbols -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
+    <!-- Tailwind CSS via CDN for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      // Basic Tailwind config to match the app's theme
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'background': '#001833',
+              'surface': '#0a2342',
+              'primary': '#007BFF',
+              'secondary': '#4C5FD7',
+              'accent': '#FFD700',
+              'text': '#E0E0E0',
+              'border': 'rgba(255, 255, 255, 0.1)',
+            },
+            fontFamily: {
+              'display': ['"Inter"', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://aistudiocdn.com/react-image-crop@^11.0.7/dist/ReactCrop.css">
+    <style>
+      /* Add some global styles and animations */
+      body {
+        background-color: #001833; /* Ensure bg color is set immediately */
+      }
+      .ken-burns {
+        animation: kenburns 20s ease-out both infinite;
+      }
+      @keyframes kenburns {
+        0% { transform: scale(1) translate(0, 0); }
+        50% { transform: scale(1.1) translate(-5px, 5px); }
+        100% { transform: scale(1) translate(0, 0); }
+      }
+      .gradient-text {
+        background: linear-gradient(to right, #007BFF, #4C5FD7);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+      }
+      .summary-marker-hidden::-webkit-details-marker {
+        display: none;
+      }
+      @keyframes spin-slow {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+      .animate-spin-slow {
+        animation: spin-slow 1.5s linear infinite;
+      }
+      
+      /* Highlight animation for navigation */
+      @keyframes highlight-fade {
+        0% { 
+            background-color: rgba(0, 123, 255, 0.3);
+            border-color: rgba(0, 123, 255, 0.8);
+            box-shadow: 0 0 15px rgba(0, 123, 255, 0.5);
+        }
+        100% { 
+            background-color: transparent;
+            border-color: rgba(255, 255, 255, 0.1); /* Matches theme 'border' */
+            box-shadow: none;
+        }
+      }
+      .highlight {
+        animation: highlight-fade 5s ease-out forwards;
+      }
+      
+      /* Ensure sticky header doesn't cover the highlighted item */
+      [id^="notice-"], [id^="event-"] {
+        scroll-margin-top: 100px;
+      }
+    </style>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+
+    <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.4",
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.24",
+    "@supabase/supabase-js": "https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.44.4/+esm",
+    "jspdf": "https://aistudiocdn.com/jspdf@^2.5.1",
+    "jspdf-autotable": "https://aistudiocdn.com/jspdf-autotable@^3.8.2",
+    "pdfjs-dist": "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.5.136/pdf.mjs",
+    "pdfjs-dist/build/pdf.worker.mjs": "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.5.136/pdf.worker.mjs",
+    "react-image-crop": "https://aistudiocdn.com/react-image-crop@^11.0.7",
+    "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.1.0",
+    "vite": "https://aistudiocdn.com/vite@^7.1.12",
+    "path": "https://aistudiocdn.com/path@^0.12.7",
+    "process": "https://aistudiocdn.com/process@^0.11.10"
+  }
+}
+</script>
+    <script type="module" src="/index.tsx"></script>
+</body>
+</html>
