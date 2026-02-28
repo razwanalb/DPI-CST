@@ -190,7 +190,7 @@ const Footer: React.FC = () => {
                         </div>
                     </div>
                     <div className="border-t border-border mt-8 pt-6 text-center text-sm text-text/70">
-                        <p>© 2025 {siteInfo.instituteName}. All Rights Reserved.</p>
+                        <p>© 2026 {siteInfo.instituteName}. All Rights Reserved.</p>
                     </div>
                 </div>
             </footer>
